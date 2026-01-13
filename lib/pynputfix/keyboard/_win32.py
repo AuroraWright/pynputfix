@@ -33,8 +33,8 @@ from ctypes import wintypes
 
 import pynput._util.win32_vks as VK
 
-from pynput._util import AbstractListener
-from pynput._util.win32 import (
+from pynputfix._util import AbstractListener
+from pynputfix._util.win32 import (
     INPUT,
     INPUT_union,
     KEYBDINPUT,

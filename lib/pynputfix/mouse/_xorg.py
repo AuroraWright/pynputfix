@@ -42,7 +42,7 @@ import Xlib.ext.xtest
 import Xlib.X
 import Xlib.protocol
 
-from pynput._util.xorg import (
+from pynputfix._util.xorg import (
     display_manager,
     ListenerMixin)
 from . import _base

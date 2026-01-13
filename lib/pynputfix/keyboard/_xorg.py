@@ -42,8 +42,8 @@ import Xlib.XK
 import Xlib.protocol
 import Xlib.keysymdef.xkb
 
-from pynput._util import NotifierMixin
-from pynput._util.xorg import (
+from pynputfix._util import NotifierMixin
+from pynputfix._util.xorg import (
     alt_mask,
     alt_gr_mask,
     char_to_keysym,
@@ -54,7 +54,7 @@ from pynput._util.xorg import (
     numlock_mask,
     shift_to_index,
     symbol_to_keysym)
-from pynput._util.xorg_keysyms import (
+from pynputfix._util.xorg_keysyms import (
     CHARS,
     DEAD_KEYS,
     KEYPAD_KEYS,
