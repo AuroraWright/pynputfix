@@ -6,16 +6,16 @@ import setuptools
 
 
 #: The name of the package on PyPi
-PYPI_PACKAGE_NAME = 'pynput'
+PYPI_PACKAGE_NAME = 'pynputfix'
 
 #: The name of the main Python package
-MAIN_PACKAGE_NAME = 'pynput'
+MAIN_PACKAGE_NAME = 'pynputfix'
 
 #: The package URL
-PACKAGE_URL = 'https://github.com/moses-palmer/pynput'
+PACKAGE_URL = 'https://github.com/AuroraWright/pynputfix'
 
 #: The author email
-AUTHOR_EMAIL = 'moses.palmer@gmail.com'
+AUTHOR_EMAIL = 'fallingluma@gmail.com'
 
 #: The runtime requirements
 RUNTIME_PACKAGES = [
@@ -61,16 +61,6 @@ try:
             os.path.dirname(__file__),
             'README.rst'), 'rb') as f:
         README = f.read().decode('utf-8')
-
-    with open(os.path.join(
-            os.path.dirname(__file__),
-            os.path.join('docs', 'mouse-usage.rst')), 'rb') as f:
-        README += '\n\n' + f.read().decode('utf-8')
-
-    with open(os.path.join(
-            os.path.dirname(__file__),
-            os.path.join('docs', 'keyboard-usage.rst')), 'rb') as f:
-        README += '\n\n' + f.read().decode('utf-8')
 except IOError:
     README = ''
 
@@ -89,7 +79,7 @@ setuptools.setup(
     name=PYPI_PACKAGE_NAME,
     version='.'.join(str(i) for i in INFO['version']),
     description='Monitor and control user input devices',
-    long_description=README + '\n\n' + CHANGES,
+    long_description=README,
 
     install_requires=RUNTIME_PACKAGES,
     setup_requires=RUNTIME_PACKAGES + SETUP_PACKAGES,

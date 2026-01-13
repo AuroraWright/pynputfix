@@ -55,7 +55,7 @@ from Quartz import (
 
 from AppKit import NSEvent
 
-from pynput._util.darwin import (
+from pynputfix._util.darwin import (
     ListenerMixin)
 from . import _base
 

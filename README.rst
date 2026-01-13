@@ -1,9 +1,10 @@
-pynput
-======
+pynputfix
+=========
 
-This library allows you to control and monitor input devices.
+This is just pynput 1.8.1 with three branches applied:
 
-Currently, mouse and keyboard input and monitoring are supported.
+* https://github.com/moses-palmer/pynput/tree/fixup/macos
+* https://github.com/moses-palmer/pynput/tree/fixup/uinput
+* https://github.com/moses-palmer/pynput/tree/fixup/xorg
 
-See `here <https://pynput.readthedocs.io/en/latest/>`_ for the full
-documentation.
+All credit and copyright for the code goes to the original developers.
